@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hacker Touches the Walls</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google font -->
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS -->
+    <link href="css/index.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+    <div id="app" class="container area">
+        <div class="row">
+            <div id="keytype" class="col-md-6">
+                <div v-for="ln in title">
+                    <span v-for="c in ln" v-bind:class="{'typewell': c.ok, 'typemiss': !c.ok}">{{c.char}}</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="evaluation" >
+                    <div>
+                        <img src="" v-bind="{src: getCategoryImage()}" class="img-responsive img"/>
+                    </div>
+                    <div id="scores">
+                        <div class="detail">
+                            <table>
+                                <tr v-for="v in evaluation">
+                                    <td>{{$key.charAt(0).toUpperCase() + $key.slice(1)}}</td>
+                                    <td style="text-align:right">{{v}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="animation" class="col-md-12">
+                <canvas id="canvas" width="200" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bacon.js/0.7.82/Bacon.min.js"></script>
+    <script src="js/createjs-2015.11.26.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

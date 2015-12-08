@@ -1,0 +1,54 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    font-family: 'Cuprum', sans-serif;
+    background-color: white;
+}
+
+.area {
+    margin-top: 20px;
+    max-width: 1000px;
+}
+
+#keytype{
+    font-weight: bold;
+    font-size: 100px;
+}
+
+#keytype .typewell{
+    color: black;
+}
+
+#keytype .typemiss{
+    color: silver;
+}
+
+
+#evaluation{
+    margin-top:30px;
+    border-right: 5px solid lightgray;
+    position: relative;
+    height: 500px;
+}
+
+.img{
+    margin: 5px;
+}
+
+#scores{
+    min-width: 200px;
+    padding: 8px;
+    font-size: 25px;
+    background: rgba(230,230, 250, 0.7);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;    
+}
+
+#scores .detail table{
+    width: 100%;
+}
