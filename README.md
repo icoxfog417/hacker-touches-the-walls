@@ -1,5 +1,7 @@
 # Hacker Touche the Walls
 
+*This is the 5th day of the [Kuso-Appli Advent Calendar](http://www.adventar.org/calendars/763).*
+
 Hey Ladies and Gentleman, are you envying REA-JYUs as the Christmas draws near?
 But, I know you are Hacker, and your key touch is sexy enough to attrackt everyone.
   
