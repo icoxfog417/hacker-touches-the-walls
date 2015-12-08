@@ -14,30 +14,54 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Google font -->
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:700' rel='stylesheet' type='text/css'>
+
     <!-- Custom CSS -->
     <link href="css/index.css" rel="stylesheet">
-
+    
 </head>
 
 <body>
-
-    <div class="brand">Hacker Touches the Walls</div>
-    <div class="address-bar">Your key touch is sexy?</div>
-    <div class="container">
+    
+    <div id="app" class="container area">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>hoge</h2>
+            <div id="keytype" class="col-md-6">
+                <div v-for="ln in title">
+                    <span v-for="c in ln" v-bind:class="{'typewell': c.ok, 'typemiss': !c.ok}">{{c.char}}</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="evaluation" >
+                    <div>
+                        <img src="" v-bind="{src: getCategoryImage()}" class="img-responsive img"/>
+                    </div>
+                    <div id="scores">
+                        <div class="detail">
+                            <table>
+                                <tr v-for="v in evaluation">
+                                    <td>{{$key.charAt(0).toUpperCase() + $key.slice(1)}}</td>
+                                    <td style="text-align:right">{{v}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="animation" class="col-md-12">
+                <canvas id="canvas" width="200" height="200"></canvas>
             </div>
         </div>
     </div>
-    <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="node_modules/baconjs/dist/Bacon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bacon.js/0.7.82/Bacon.min.js"></script>
+    <script src="js/createjs-2015.11.26.min.js"></script>
+    <script src="js/vue.min.js"></script>
     <script src="js/index.js"></script>
 
 </body>

@@ -5,125 +5,50 @@
  */
 
 body {
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    font-family: 'Cuprum', sans-serif;
+    background-color: white;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
-    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+.area {
+    margin-top: 20px;
+    max-width: 1000px;
 }
 
-p {
-    font-size: 1.25em;
-    line-height: 1.6;
-    color: #000;
+#keytype{
+    font-weight: bold;
+    font-size: 100px;
 }
 
-hr {
-    max-width: 400px;
-    border-color: #999999;
+#keytype .typewell{
+    color: black;
 }
 
-.img-full {
-    min-width: 100%;
+#keytype .typemiss{
+    color: silver;
 }
 
-.brand-before,
-.brand-name {
-    text-transform: capitalize;
+
+#evaluation{
+    margin-top:30px;
+    border-right: 5px solid lightgray;
+    position: relative;
+    height: 500px;
 }
 
-.brand-before {
-    margin: 15px 0;
+.img{
+    margin: 5px;
 }
 
-.brand-name {
-    margin: 0;
-    font-size: 4em;
+#scores{
+    min-width: 200px;
+    padding: 8px;
+    font-size: 25px;
+    background: rgba(230,230, 250, 0.7);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;    
 }
 
-.tagline-divider {
-    margin: 15px auto 3px;
-    max-width: 250px;
-    border-color: #999999;
-}
-
-.box {
-    margin-bottom: 20px;
-    padding: 30px 15px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
-}
-
-.intro-text {
-    text-transform: uppercase;
-    font-size: 1.25em;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-.img-border {
-    float: none;
-    margin: 0 auto 0;
-    border: #999999 solid 1px;
-}
-
-.img-left {
-    float: none;
-    margin: 0 auto 0;
-}
-
-footer {
-    background: #fff;
-    background: rgba(255,255,255,0.9);
-}
-
-footer p {
-    margin: 0;
-    padding: 50px 0;
-}
-
-@media screen and (min-width:768px) {
-    .brand {
-        display: inherit;
-        margin: 0;
-        padding: 30px 0 10px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 5em;
-        font-weight: 700;
-        line-height: normal;
-        color: #fff;
-    }
-
-    .top-divider {
-        margin-top: 0;
-    }
-
-    .img-left {
-        float: left;
-        margin-right: 25px;
-    }
-
-}
-
-@media screen and (min-width:1200px) {
-    .box:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
+#scores .detail table{
+    width: 100%;
 }
