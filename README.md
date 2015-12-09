@@ -5,14 +5,15 @@
 Hey Ladies and Gentleman, are you envying REA-JYUs as the Christmas draws near?
 But, I know you are Hacker, and your key touch is sexy enough to attrackt everyone.
   
-So let's try it, take it easy, only you have to do is to type "Hacker Touches the Walls".  
+So let's try it, take it easy, only you have to do is below.
 
-[Hacker Touches the Walls](http://icoxfog417.github.io/hacker-touches-the-walls/)
+1. Access to [Hacker Touches the Walls](http://icoxfog417.github.io/hacker-touches-the-walls/). (Do you think that you have heard this name? If so, we will meet [at the Budoukan](http://www.nicotouchesthewalls.com/live/2015/07/nico-touches-the-walls-live-special-1.html))
+2. Type "Hacker Touches the Walls" (you don't need to type space between words). 
+3. TTTAAANN!! (push the Enter)
 
-(Do you think that you have heard this name? If so, we will meet [at the Budoukan](http://www.nicotouchesthewalls.com/live/2015/07/nico-touches-the-walls-live-special-1.html).)
+![tttaaannn](tttaaannn.jpg)
 
 Enjoy!
-
 
 ## Architecture
 
